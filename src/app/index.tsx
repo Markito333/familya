@@ -5,5 +5,5 @@ import { useAuth } from '@/providers/auth-provider';
 export default function IndexScreen() {
   const { user } = useAuth();
 
-  return <Redirect href={user ? '/tasks' : '/login'} />;
+  return <Redirect href={user ? '/home' : '/login'} />;
 }

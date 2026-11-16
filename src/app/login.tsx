@@ -31,7 +31,7 @@ export default function LoginScreen() {
   const [loading, setLoading] = useState(false);
 
   if (user) {
-    return <Redirect href="/tasks" />;
+    return <Redirect href="/home" />;
   }
 
   const handleSubmit = async () => {

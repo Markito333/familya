@@ -29,6 +29,15 @@ export default function TabsLayout() {
         },
       }}>
       <Tabs.Screen
+        name="home"
+        options={{
+          title: 'Inicio',
+          tabBarIcon: ({ color, size }) => (
+            <HeroIcon name="home" size={size} color={String(color)} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="tasks"
         options={{
           title: 'Tareas',
