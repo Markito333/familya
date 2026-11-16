@@ -63,3 +63,46 @@ export const Spacing = {
 
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
 export const MaxContentWidth = 800;
+
+export const Palette = {
+  background: '#F7F2E8',
+  surface: '#FFFDF9',
+  surfaceMuted: '#F3EDE2',
+  surfaceTint: '#FBF8F1',
+  text: '#2B2723',
+  textMuted: '#7B7369',
+  border: '#EAE2D5',
+  coral: '#F29A85',
+  coralSoft: '#FCE7DF',
+  coralDeep: '#B85C43',
+  coralInk: '#3A1D15',
+  sage: '#DCEBCF',
+  sageStrong: '#5B7A4A',
+  mint: '#E6F4EA',
+  mintStrong: '#3F7A52',
+  stone: '#EFF1ED',
+  stoneStrong: '#6B7268',
+  sky: '#EAF1F6',
+  skyStrong: '#4E6E86',
+  danger: '#B0524C',
+  dangerSoft: '#FBEFEE',
+  white: '#FFFFFF',
+} as const;
+
+export const Radius = {
+  sm: 10,
+  md: 14,
+  lg: 20,
+  pill: 999,
+} as const;
+
+export const cardShadow = Platform.select({
+  ios: {
+    shadowColor: '#B85C43',
+    shadowOpacity: 0.06,
+    shadowRadius: 14,
+    shadowOffset: { width: 0, height: 6 },
+  },
+  android: { elevation: 1 },
+  default: {},
+});
